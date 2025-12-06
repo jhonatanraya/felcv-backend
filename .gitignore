@@ -8,3 +8,4 @@ rasa/.rasa/
 rasa/__pycache__/
 rasa/*.log
 rasa/venv/
+rasa/models/
