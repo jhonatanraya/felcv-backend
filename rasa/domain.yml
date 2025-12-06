@@ -1,0 +1,30 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - realizar_denuncia 
+  - ayuda_denuncia
+  - contacto
+
+responses:
+  utter_saludar:
+    - text: "¡Hola! ¿En qué puedo ayudarte hoy?"
+      buttons:
+          - title: "Realizar una denuncia"
+            payload: "/realizar_denuncia"
+          - title: "Ayuda con una emergencia"
+            payload: "/ayuda_denuncia"
+          - title: "Contactarse con un operador"
+            payload: "/contacto"
+  utter_realizar_denuncia :
+    - text: | 
+        Para realizar una denuncia debe seguir los siguientes pasos:<br/>
+        • Apersonarse a la oficina de la FELCV mas proxima a su ubicacion.<br/> 
+        • Portar su documento de identidad o pasaporte vigente.<br/>  
+        • Brindar toda la informacion requerida por el oficial asignado.  
+  utter_ayuda_denuncia:
+    - text: |
+        • Para poder usar el boton de panico debe ingresar su telefono y documento de identidad brindados al momento haber realizado su denuncia.<br/>
+        • El boton de panico estara habilitado para Ud. siempre y cuando tenga una denuncia previa o vigente.
+  utter_contacto:
+    - text: "Puede contactarse con el siguiente numero: 77777777"

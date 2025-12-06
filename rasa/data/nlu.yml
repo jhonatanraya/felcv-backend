@@ -1,0 +1,23 @@
+version: "3.1" 
+nlu: 
+  - intent: saludar 
+    examples: | 
+      - Hola 
+      - Buenas 
+      - ¿Qué tal? 
+  - intent: realizar_denuncia 
+    examples: | 
+      - Quiero realizar una denuncia
+      - ¿Cómo realizo una denuncia? 
+      - Opcion 1
+  - intent: ayuda_denuncia 
+    examples: | 
+      - donde denuncio
+      - ¿Donde realizo una denuncia? 
+      - No sé cómo denunciar
+      - Opcion 2
+  - intent: contacto
+    examples: | 
+      - Necesito contactarme con alguien
+      - Necesito el numero de la oficina
+      - Opcion 3
